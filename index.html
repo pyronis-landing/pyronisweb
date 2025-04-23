@@ -1,95 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pyronis | Precision AI Infrastructure</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pyronis – AIOS Framework</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@400;700&display=swap" />
   <style>
+    :root {
+      --accent: #ff5823;
+      --background: #0f0f0f;
+      --foreground: #f5f5f5;
+      --muted: #999;
+    }
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0e0e0e;
-      color: #f4f4f4;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      line-height: 1.6;
     }
     header {
-      background: linear-gradient(to right, #222, #111);
-      padding: 3rem 2rem 1rem;
+      background: linear-gradient(to right, #1a1a1a, #0f0f0f);
       text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      padding: 4rem 1rem 3rem;
     }
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
-      letter-spacing: 1px;
+    header img {
+      max-width: 140px;
+      margin-bottom: 1rem;
     }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.25rem;
-      color: #aaa;
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
     }
-    .pulse-container {
+    p.subtitle {
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+    section {
+      max-width: 860px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    section h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.8rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    section p {
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-brain {
+      display: flex;
+      justify-content: center;
       margin-top: 2rem;
     }
-    .pulse-image {
-      width: 200px;
-      animation: pulse 2.5s infinite;
+    .hero-brain img {
+      max-width: 320px;
+      filter: drop-shadow(0 0 10px #ff5823);
     }
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.08); opacity: 0.85; }
-      100% { transform: scale(1); opacity: 1; }
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
     }
-    .section {
-      padding: 3rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
+    .cta a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: var(--accent);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.2s ease-in-out;
     }
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #33ccff;
-    }
-    .section p {
-      line-height: 1.6;
-      font-size: 1.1rem;
-      color: #ddd;
+    .cta a:hover {
+      background-color: #e14b1e;
     }
     footer {
-      background: #111;
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
-      color: #777;
-      border-top: 1px solid #222;
+      color: var(--muted);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Pyronis</h1>
-    <p>Precision-Crafted AI Infrastructure for the Future of Human Alignment</p>
-    <div class="pulse-container">
-      <img src="brain_pulse.png" alt="Pulsing Brain" class="pulse-image">
-    </div>
+    <img src="assets/pyronis-logo.png" alt="Pyronis Logo" />
+    <h1>PYRONIS</h1>
+    <p class="subtitle">The AIOS framework for human connection</p>
   </header>
 
-  <div class="section">
-    <h2>What We Do</h2>
-    <p>Pyronis is the world's first deterministic AI operating system engineered to eliminate hallucination, token drift, and moral ambiguity. Our infrastructure is built from the silicon up for token-native logic, memory, and BIOS-aligned enforcement — protecting human agency while expanding our collective capability.</p>
-  </div>
+  <section>
+    <h2>We’re building something that’s never been done before</h2>
+    <p>
+      Pyronis is the world’s first token-native cognitive operating system — a sealed, deterministic AIOS designed for truth, permanence, and human alignment. Every action is declared, verified, and BIOS-compliant before execution. If you're tired of patching broken software or watching good ideas drift, you belong here.
+    </p>
+  </section>
 
-  <div class="section">
-    <h2>Why It Matters</h2>
-    <p>AI should not guess. It should not lie. It should not violate core moral boundaries. Pyronis enforces this at the system level — through KHJ, DOT, and token-native memory — creating a new class of intelligence that augments humans instead of replacing them.</p>
-  </div>
+  <section class="hero-brain">
+    <img src="assets/pyronis-brain.png" alt="Pyronis Brain Circuit" />
+  </section>
 
-  <div class="section">
-    <h2>Get Involved</h2>
-    <p>If you're ready to build a better future, we want to hear from you. Whether you're an engineer, policymaker, or investor — the Third Way needs allies. Reach out. Join the mission. The future has a name: Pyronis.</p>
-  </div>
+  <section>
+    <h2>Why work with us?</h2>
+    <p>
+      We don't do hype. We build frameworks that govern AI with law. DOT, KHJ, and BIOS aren't product names — they are fundamental systems engineered to protect people and make software permanent. If you care about doing it right instead of just doing it fast, you're our kind of engineer.
+    </p>
+    <p>
+      Our team is lean, focused, and serious. We believe AI should be incorruptible, transparent, and moral — and we are building the system to prove it.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:keith@pyronis.ai">keith@pyronis.ai</a><br />
+    Join us: <a href="mailto:page@pyronis.ai">page@pyronis.ai</a></p>
+    <div class="cta">
+      <a href="mailto:keith@pyronis.ai">Start a Conversation</a>
+    </div>
+  </section>
 
   <footer>
-    &copy; 2025 Pyronis Inc. All rights reserved.
+    &copy; 2025 Pyronis Inc. Built with truth. Powered by tokens.
   </footer>
 </body>
 </html>
